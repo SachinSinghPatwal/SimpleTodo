@@ -25,16 +25,14 @@ function LeftSidebar() {
     <div className="w-fit flex flex-col pt-[6rem] bg-inherit">
       <div className="bg-[#dcecde] dark:bg-[#2C2C2C] px-[1rem] rounded-[5px] xl:w-full w-[200px] pb-[2rem]">
         <div className="pt-4">
-          <div
-            className="grid grid-flow-row justify-items-center mb-[.5rem]"
-            onMouseEnter={() => {
-              setHovered(true);
-            }}
-            onMouseLeave={() => {
-              setHovered(false);
-            }}
-          >
+          <div className="grid grid-flow-row justify-items-center mb-[.5rem]">
             <img
+              onMouseEnter={() => {
+                setHovered(true);
+              }}
+              onMouseLeave={() => {
+                setHovered(false);
+              }}
               src={
                 !hovered
                   ? personImage
